@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+    #stage {
+      width: 300px;
+      height: 300px;
+      position: relative;
+    }
+
+    #background {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-image: url(./img/backgroundstar.jpg);
+    }
+
+    #cannon {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 270px;
+      left: 140px;
+      background-image:url(./img/shooter.png);
+    }
+    #alien {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 20px;
+      left: 80px;
+      background-image: url(./img/skymaster.jpg);
+    }
+    #missile {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 270px;
+      left: 140px;
+     
+    }
+    #explosion {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-image: url(./img/explode.jpg);
+      display: none;
+    }
+  </style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star War Game - Binary Tree Game</title>
+</head>
+<body>
+  <div id="stage">
+    <div id="background"></div>
+    <div id="cannon"></div>
+    <div id="missile"></div>
+    <div id="alien"></div>
+    <div id="explosion"></div>
+  </div><!--<div id="stage">-->
+  <div id="userinput">
+      <p id="output"> Please enter the X, Y (0-300), and click fire.</p>
+  <input id="inputX" type="text" placeholder="X...">
+  <input id="inputY" type="text" placeholder="Y...">
+  <button>fire</button>
+  </div>  <!-- <div id="userinput"> -->
+
+
+  <script type="text/javascript" src="binaryTreeGame.js">
+
+  </script>
+</body>
+</html>
